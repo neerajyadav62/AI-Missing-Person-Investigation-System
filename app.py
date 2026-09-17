@@ -40,24 +40,24 @@ st.info(
 # =========================================================
 
 movement = pd.read_csv(
-    "data/movement_analysis.csv"
+    "movement_analysis.csv"
 )
 
 priority = pd.read_csv(
-    "data/search_priority.csv"
+    "search_priority.csv"
 )
 
 route = pd.read_csv(
-    "data/route_transition_matrix.csv",
+    "route_transition_matrix.csv",
     index_col=0
 )
 
 model = joblib.load(
-    "models/location_prediction_model.pkl"
+    "location_prediction_model.pkl"
 )
 
 label_encoder = joblib.load(
-    "models/area_label_encoder.pkl"
+    "area_label_encoder.pkl"
 )
 
 
